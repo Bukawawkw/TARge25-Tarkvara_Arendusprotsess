@@ -1,0 +1,172 @@
+/*
+                Nothing to see here, experimental to see whether i still remember css myself
+                Made purely for main.html as for now (might have the files mostly separate)
+                WARNING: Contains a lot of shitcode (experimenting with stuff) and figuring out process
+								This is not PRODUCTION-READY BY ANY MEANS. AND STILL (WORK-IN-PROGRESS) WIP.
+*/
+
+
+:root
+{
+	--smooth-transition: transform 0.5s,
+	                     height 0.5s,
+											 width 0.5s,
+											 opacity 0.5s,
+											 margin-left 0.6s,
+											 margin-top 0.4s,
+											 display 0.6s,
+											 border 0.2s
+											 cubic-bezier(0.53, 0.05, 0.26, 0.81);
+
+	--test-color: #99ccff;
+}
+
+
+body
+{
+	margin-left: 15px;
+}
+
+
+/* Main container for images */
+.t-container-wrap
+{
+	/*background: yellow;*/
+	display: inline-flex;
+	overflow: visible;
+}
+
+
+/* Main Profile Picture */
+.main-img
+{
+	transition: var(--smooth-transition);
+	border: solid 2px var(--test-color);
+	position: relative;
+	z-index 2;
+}
+
+.main-img-container
+{
+	/*background: red;*/
+	transition: var(--smooth-transition);
+}
+
+.t-container-wrap:hover .main-img
+{
+	transform: rotate(-10deg);
+	width: 188px;
+	height: 188px;
+	border: none;
+}
+
+.t-container-wrap:hover .main-img-container
+{
+	margin-left: 20px; /* 6px */
+}
+
+
+/* Logo Image */
+.logo-img
+{
+	transition: var(--smooth-transition);
+	opacity: 0;
+	position: relative;
+	z-index: 1;
+}
+
+.logo-img-container
+{
+	/*background: blue;*/
+	margin-left: -115px;
+	transition: var(--smooth-transition);
+}
+
+.t-container-wrap:hover .logo-img
+{
+	transform: rotate(10deg);
+	width: 188px;
+	height: 188px;
+	opacity: 1;
+}
+
+.t-container-wrap:hover .logo-img-container
+{
+	margin-left: 85px; /* 122px */
+}
+
+
+/* Text under images */
+.p-img-text1, .p-img-text2
+{
+	display: none;
+	transition: var(--smooth-transition);
+	font-family: Arial;
+	font-size: 0.92rem;
+	font-weight: bold;
+}
+
+.t-container-wrap:hover .p-img-text1
+{
+	display: flex;
+	justify-content: center;
+	margin-left: 36px;
+	margin-top: 16px;
+}
+
+.t-container-wrap:hover .p-img-text2
+{
+	display: flex;
+	justify-content: center;
+	margin-left: -36px;
+	margin-top: 16px;
+}
+
+
+/* <a> Element links */
+a
+{
+	font-size: 16px;
+	font-family: Calibri;
+	font-weight: bold;
+	color: var(--test-color);
+	background: transparent;
+	
+	transition:
+		padding 0.4s,
+		text-decoration 0.4s,
+		color 0.4s,
+		background 0.4s,
+		border-radius 0.4s;
+	transition-timing-function: cubic-bezier(0.53,0.05,0.26,0.81);
+}
+
+a:hover
+{
+	color: white;
+	background: var(--test-color);
+	text-decoration: none;
+	padding: 4px 25px 5px 28px;
+	border-radius: 5px;
+}
+
+
+/* Additional formatting for the overall page */
+th, td
+{
+	padding: 5px 2px 0px 25px; 
+	/* 8px 2px 10px 25px; */ 
+	/* 5px 2px 2px 25px */
+}
+
+.br-custom-small
+{
+	content: "";
+	display: block;
+	margin-bottom: 35px !important
+}
+
+.p-explanation
+{
+	margin-bottom: 25px;
+}
