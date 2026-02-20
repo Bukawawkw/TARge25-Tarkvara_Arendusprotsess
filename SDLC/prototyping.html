@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prototüüpimine</title>
+				<link rel="stylesheet" href="../css/temp.css">
+</head>
+<body>
+	<div class="div-container-center back"><a href="./sdlc.html#:~:text=Erinevad%20tarkvaraarenduse%20eluts%C3%BCklid%3A">Tagasi</a></div>
+	<div class="div-container-center"><h1>- Prototüüpimise mudel -</h1><br class="br-small"></div>
+	<h2>Arendusmudeli kohta üldiselt</h2>
+	<fieldset>
+		<legend>Mis see on?</legend>
+		<div class="p-explanation-with-border">
+		<p>
+		Prototüüpimismudel on iteratiivne tarkvaraarendusmudel, kus arenduse käigus
+		luuakse prototüüp ehk süsteemi mittetäielik algne versioon. Prototüüpi kasutatakse disainivõimaluste katsetamiseks
+		ning ideede demonstreerimiseks kliendile. Seda mudelit kasutatakse eriti siis, kui
+		kliendi nõuded ei ole alguses selged või vajavad täpsustamist.
+		<br>
+		<p style="margin-bottom: 5px;">Prototüüpe saab kasutada erinevates arenduse faasides:</p>
+		<ul class="stages" style="margin-top: 0;">
+			<li>Nõuete analüüsi etapis nõuete leidmiseks ja valideerimiseks.</li>
+			<li>Disaini etapis erinevate lahendusvariantide uurimiseks ja kasutajaliidese kavandamiseks.</li>
+		</ul>
+		</p>
+		</div>
+		<fieldset>
+			<legend>Lühike mõistekaard</legend>
+			<p>
+			<div class="definition">
+				<b><u>- Prototüüp -</u></b>
+			</div>
+			<br>
+			<span>Ehk süsteemi mittetäielik algne versioon.</span>
+			</p>
+		</fieldset>
+	</fieldset>
+	<br><br>
+	<div class="long-line"></div>
+	<br>
+	<h2>Põhitõmbenumber / Põhimõte</h2>
+	<p class="p-explanation">
+		Prototüüpimismudeli põhiidee on varajane prototüüp ja kliendi tagasiside. Prototüüp aitab kliendil paremini
+		aru saada, milline süsteem välja näeb ja kuidas see töötab, ning võimaldab oma soove täpsustada juba arenduse alguses
+		enne lõpliku lahenduse arendamist.
+	</p>
+	<br>
+	<fieldset class="stages">
+	<legend>Prototüüpimine aitab saavutada:</legend>
+	<div><ul class="padding-20">
+		<li>Parema kasutusmugavuse.</li><br>
+		<li>Täpsema vastavuse kliendi tegelikele vajadustele.</li><br>
+		<li>Parema kvaliteedi ja hooldatavuse.</li><br>
+		<li>Väiksem risk valede lahenduste arendamiseks.</li>
+		</ul></div>
+	</fieldset>
+	<br><br>
+	<h2>Etappide kirjeldus</h2>
+  <p class="p-explanation">
+	Prototüüpimise mudeli tspkkel tavaliselt koosneb järgmistest ettapidest, 
+	mida korratakse(iterasioon):
+  </p>
+  <fieldset class="stages">
+		<legend><br>Etappid 1 - 4</legend>
+		<div>
+			<ul>
+				<b><li>Nõuete kogumine</li></b>
+				<span>Kogutakse kliendi nõuded üldisel tasemel ning märgitakse osad,
+				mis vajavad edaspidi täpsustamist.</span>
+		<br>
+				<b><li>Kiire Prototüübi kavandamine</li></b>
+				<span>Luuakse lithne ja mittetäielik versioon süsteemist (nt kasutajaliides
+				või põhifunktsioonid).</span>
+		<br>
+				<b><li>Prototüübi hindamine</li></b>
+				<span>Klient hindab prototüüpi ja annab tagasisidet, mille põhjal
+				täpsustatakse nõudeid.</span>
+    <br>
+				<b><li>Parandamine ja iteratsioon</li></b>
+				<span>Prototüüpi parandatakse ja täiendatakse mitu korda, kuni see vastab
+				kliendi ootustele.</span>
+			</ul>
+		</div>
+  </fieldset>
+  <p class="p-explanation">Prototüüp luuakse kiiresti ning see ei pea sisaldama kogu funktsionaalsust,
+	vigade kontrolli ega mittefunktsionaalseid nõuded (nt turvalisus).</p>
+  <br>
+	<h2>Arendusmudeli joonis:</h2>
+	<div class="div-container-center">
+		<img src="../pildid/prototype_model_figure.png" width="737" height="415">
+	</div>
+	<br><br>
+	<div class="long-line"></div>
+	<br><br>
+	<h2>Prototüüpimise tüübid:</h2>
+		<fieldset>
+			<legend>Prototüüpimist saab teha mitmel erineval viisil</legend>
+			<p>
+			<div class="definition">
+				<b><u>- Ühekordne prototüüpimine (Throw-away prototyping) -</u></b>
+			</div>
+			<br>
+			<span>Luuakse prototüüp ainult nõuete selgitamiseks.</span>
+			<br>
+			<span>Pärast kasutamist prototüüp visatakse ära, kuna see ei
+			sobi aluseks lõplikule süsteemile ega vasta kvaliteedi- või
+			mittefunktsionaalsetele nõuetele.</span>
+			<br><br>
+			<div class="definition">
+				<b><u>- Evolutsiooniline prototüüpomine (Evolutionary prototyping) -</u></b>
+			</div>
+			<br>
+			<span>Prototüüpi arendatakse samm-sammult edasi ning sellest võib kujuneda lõplik süsteem.
+			Seda kasutatakse juhul, kui nõuded muutuvad pidevalt.</span>
+			<br><br>
+			<div class="definition">
+				<b><u>- Lisanduv prototüüpimine (Incremental prototyping) -</u></b>
+			</div>
+			<br>
+			<span>Süsteem jaotatakse osadeks ning iga osa jaoks luuakse eraldi prototüüp.
+			Hiljem ühendatakse need tervikuks.</span>
+			</p>
+		</fieldset>
+		<br>
+		<h2>Head ja halvad küljed:</h2>
+		<div class="div-container-center">
+			<table>
+				<thead>
+					<tr>
+						<th>Head küljed:</th>
+						<th>Halvad küljed:</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Parem kliendisuhtlus ja tagasiside (klient näeb lahendust
+						ja saab soove täpsustada).</td>
+						<td>Ebapiisav testimine prototüübi faasis võib
+						viia probleemideni hiljem.</td>
+					</tr>
+					<tr>
+						<td>Vähendab arenduskulusid hilisemates faasides
+						(muudatusi on odavam teha alguses).</td>
+						<td>Liigne detailiseerimine ja ajakulukus, eriti kui
+						puudub selge struktuur.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br><br>
+		<fieldset class="links">
+			<legend><b>Viited infole:</b></legend>
+			<div>
+				<ul>
+					<li><a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1224_prototpimine.html" target="_vblank">Eõpearhiiv (tekst)</a></li>
+					<li><a href="https://www.boardinfinity.com/blog/a-quick-guide-to-prototype-model-in-software-engineering/" target="_vblank">Boardinfinity (pilt + tekst)</a></li>
+					<li><a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-prototyping-model/" target="_vblank">geeksforgeeks (tekst)</a></li>
+				</ul>
+			</div>
+		</fieldset>
+</body>
+</html>

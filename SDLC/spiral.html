@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spiraalmudel</title>
+				<link rel="stylesheet" href="../css/temp.css">
+<style>
+</style>
+</head>
+<body>
+	<div class="div-container-center back"><a href="./sdlc.html#:~:text=Erinevad%20tarkvaraarenduse%20eluts%C3%BCklid%3A">Tagasi</a></div>
+	<div class="div-container-center"><h1>- Spiraalmudel -</h1><br/ class="br-small"></div>
+	<h2>Arendusmudeli kohta üldiselt</h2>
+	<fieldset>
+		<legend>Mis see on?</legend>
+		<p class="p-explanation-with-border">
+				Spiraalmudel on iteratiivne tarkvaraarendusmudel, kus arendus toimub korduste
+				ehk ringidena, mida kujutatakse spiraalina. Iga ring on üks iteratsioon,
+				kus täpsustatakse nõudeid, hinnatakse riske ja arendatakse järgmine versioon.
+				Mudel sobib eriti projektidele, kus on palju ebakindlust või riske.
+				<br><br>
+				Spiraalmudelit kirjeldas esimest korda <a href="https://en.wikipedia.org/wiki/Barry_Boehm" target="_vblank">Barry Boehm</a> 1986. aastal.
+		</p>
+		</fieldset>
+		<br><br>
+		<div class="long-line"></div>
+		<br>
+		<h2>Põhitõmbenumber / Põhimõte</h2>
+		<p class="p-explanation">
+				Spiraalmudeli kõige olulisem põhimõte on riskidega arvestamine igas iteratsioonis.
+				Iga kordus algab riskide hindamisega ehk vaadatakse, mis võib projekti käigus valesti minna
+				ning kuidas neid riske vähendada või vältida.
+				<br><br>
+		</p>
+				<fieldset>
+					<legend>Lühike Mõistekaard</legend>
+		<p>
+					<div class="definition">
+						<u><b>- Risk - </b></u>
+					</div>
+					<br>
+					<span>Tähendab võimalust, et projekt ei lähe plaanipäraselt.<br> (nt ajakava venib,
+					maksumus kasvab või lahendus ei vasta kliendi ootustele).<br> Spiraalmudel aitab neid probleeme
+					varakult märgata ja enne edasiliikumist läbi mõelda ja lahendada.</span>
+					</p>
+				</fieldset>
+		<br><br>
+		<h2>Etappide kirjeldus</h2>
+		<p class="p-explanation">
+			 Boehmi järgi koosneb üks spiraali ring neljast etapist:
+		</p>
+		<fieldset class="stages">
+			<legend><br>Etappid 1 - 4 </legend>
+			<div><ul>
+				<b><li>Eesmärkide seadmine</li></b>
+				<span>Määratakse selle iteratsiooni eesmärgid, piirangud, oodatavad tulemused
+				ning võimalikud riskid. Samuti pannakse paika juhtimisplaan ja võimalikud alternatiivsed lahendused.</span>
+				<br>
+				<b><li>Riskide hindamine ja maandamine</li></b>
+				<span>Analüüsitakse iga leitud riske ja otsustatakse, kuidas neid vähendada
+				(nt kui risk on see, et nõudeid ei ole selged, võib selle kontrollimiseks teha prototüübi).</span>
+				<br>
+			  <b><li>Arendus ja valideerimine</li></b>
+				<span>Rakendatakse valitud lahendus, arendatakse tarkvara ja testitakse tulemusi
+				(nt kas loodud lahendus vastab eesmärkidele).</span>
+				<br>
+				<b><li>Planeerimine</li></b>
+				<span>Analüüsitake saavutatud tulemus ning planeeritakse järgmine iteratsioon.</span>
+				</ul></div>
+		</fieldset>
+		<p class="p-explanation">Need neli etapid korduvad seni, kuni projekt on lõpetanud.</p>
+		<br><br>
+		<h2>Arendusmudeli joonis:</h2>
+		<div class="div-container-center">
+			<img src="../pildid/spiral_model_figure.png" width="620" height="550">
+		</div>
+		<br><br>
+		<div class="long-line"></div>
+		<br>
+		<h2>Head ja halvad küljed:</h2>
+		<div class="div-container-center>">
+			<table>
+			<thead>
+				<tr>
+					<th>Head küljed:</th>
+					<th>Halvad küljed:</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Riskide varajane tuvastamine ja vähendamine.</td>
+					<td>On kulukas, nõuab pidevat planeerimist, riskianalüüsi ja hindamist.</td>
+				</tr>
+				<tr>
+					<td>Sobib keerukate ja ebamääraste nõuetega projektidele.</td>
+					<td>Aeganõudev, sobib pigem suuremahulistele, keerukatele ja kalli riskiga projektidele.</td>
+				</tr>
+				<tr>
+					<td>Võimaldab arendust kohandada vastavalt olukorrale.</td>
+					<td>Keeruline määrata tsüklite arvu ja nende kestust ette.</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<br><br>
+		<fieldset class="links">
+			<legend><b>Viited infole:</b></legend>
+			<div>
+				<ul>
+				<li><a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1223_spiraalmudel.html" target="_blank">Eõpearhiiv (tekst)</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Spiral_model" target="_vblank">Wikipedia (tekst)</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Spiral_model#:~:text=Spiral%20model%20(Boehm%2C%201988).%20A%20number%20of%20misconceptions%20stem%20from%20oversimplifications%20in%20this%20widely%20circulated%20diagram%20(there%20are%20some%20errors%20in%20this%20diagram).%5B1%5D" target="_vblank">Wikipedia (pilt)</a></li>
+				</ul>
+			</div>
+		</fieldset>
+</body>
+</html>
